@@ -1,68 +1,60 @@
-﻿​​# Amazon Sales Analysis Project
+# Amazon.in Sales Analysis SQL Project
 
+![Image Description](https://github.com/najirh/Amazon.in_Sales_Data_Analysis/blob/main/amazon_india_wide_image.jpg)
 
-![Banner Image](insert_banner_image_link_here)
+This repository contains a comprehensive SQL project focused on sales analysis. The project involved data cleaning, feature engineering, and data manipulation using SQL queries to derive valuable insights from sales data.
 
+## Project Overview
 
-Welcome to the Amazon Sales Analysis project! In this project, we delve into analyzing sales data from Amazon to extract insights and trends that can help optimize sales strategies, understand customer behavior, and improve business operations.
+The SQL project aims to analyze sales data to provide insights into various aspects of business performance, including customer profitability, product performance, and sales trends. The project addresses ten critical business questions through advanced SQL techniques.
 
+## Key Features
 
-## Introduction
+- Data cleaning, feature engineering, and preprocessing using SQL.
+- Utilization of advanced SQL queries to answer pivotal business questions.
+- Extraction of actionable insights on sales distribution, customer profitability, and product efficacy.
+- Proficiency demonstrated in trend analysis and profitability assessment through SQL-driven methodologies.
 
+## Business Questions Resolved
 
-This project focuses on analyzing a dataset containing Amazon sales records, including information such as sales dates, customer details, product categories, and revenue figures. By leveraging SQL queries and data analysis techniques, we aim to answer various questions and uncover valuable insights from the dataset.
+1. Find total sales for each category.
+2. Find out the top 5 customers who made the highest profits.
+3. Find out the average quantity ordered per category.
+4. Identify the top 5 products that have generated the highest revenue.
+5. Determine the top 5 products whose revenue has decreased compared to the previous year.
+6. Identify the highest profitable sub-category.
+7. Find out the states with the highest total orders.
+8. Determine the month with the highest number of orders.
+9. Calculate the profit margin percentage for each sale (Profit divided by Sales).
+10. Calculate the percentage contribution of each sub-category
 
+## Project Structure
 
-## Dataset Overview
+The repository is organized as follows:
 
-
-The dataset used in this project consists of [insert number] rows of data, representing Amazon sales transactions. Along with the sales data, the dataset includes information about customers, products, orders, and returns. Before analysis, the dataset underwent preprocessing to handle missing values and ensure data quality.
-
-
-## Analysis Questions Resolved
-
-
-During the analysis, the following key questions were addressed using SQL queries and data analysis techniques:
-
-
-1. Find out the top 5 customers who made the highest profits.
-2. Find out the average quantity ordered per category.
-3. Identify the top 5 products that have generated the highest revenue.
-4. Determine the top 5 products whose revenue has decreased compared to the previous year.
-5. Identify the highest profitable sub-category.
-6. Find out the states with the highest total orders.
-7. Determine the month with the highest number of orders.
-8. Calculate the profit margin percentage for each sale (Profit divided by Sales).
-9. Calculate the percentage contribution of each sub-category.
-10. Identify the top 2 categories that have received maximum returns and their return percentage.
-
-
-## Entity-Relationship Diagram (ERD)
-
-
-![ERD Image](insert_banner_image_link_here)
-
-
-An Entity-Relationship Diagram (ERD) has been created to visualize the relationships between the tables in the dataset. This diagram provides a clear understanding of the data structure and helps in identifying key entities and their attributes.
-
+- `data/`: Contains the raw sales data files.
+- `sql/`: Includes SQL scripts for data cleaning, feature engineering, and analysis.
+- `README.md`: Provides an overview of the project, including its objectives, features, and structure.
 
 ## Getting Started
 
+To replicate the analysis or explore the project further, follow these steps:
 
-To replicate the analysis or explore the dataset further, follow these steps:
+1. Clone this repository to your local machine.
+2. Navigate to the `sql/` directory to access the SQL scripts.
+3. Execute the SQL scripts using your preferred database management system.
+4. Analyze the results and derive insights from the generated outputs.
 
+## Requirements
 
-1. Clone the repository to your local machine.
-2. Ensure you have a SQL environment set up to execute queries.
-3. Load the provided dataset into your SQL database.
-4. Execute the SQL queries provided in the repository to analyze the data and derive insights.
-5. Customize the analysis or queries as needed for your specific objectives.
+- SQL database management system (e.g., MySQL, PostgreSQL).
+- Basic understanding of SQL querying and data manipulation techniques.
 
+## Contribution
 
-## Conclusion
+Contributions to enhance the project are welcome! Feel free to submit pull requests or raise issues for any suggestions or improvements.
 
+## License
 
-Through this project, we aim to provide valuable insights into Amazon sales trends, customer preferences, and other factors influencing e-commerce operations. By analyzing the dataset and addressing the key questions, we hope to assist stakeholders in making informed decisions and optimizing their sales strategies.
+This project is licensed under the [MIT License](LICENSE).
 
-
-Feel free to explore the repository and contribute to further analysis or enhancements!
