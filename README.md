@@ -1,7 +1,7 @@
 ​​# Amazon Sales Analysis Project
 
 
-![Banner Image](![image](https://github.com/BigeyEeE/Amazon_Analysis/assets/149139652/612621db-fd7d-4e82-b1ef-26b984fc8d63)
+![Banner Image](https://github.com/BigeyEeE/Amazon_Analysis/blob/main/amazon_india_wide_image-3.jpg?raw=true)
 )
 
 
@@ -41,7 +41,7 @@ During the analysis, the following key questions were addressed using SQL querie
 ## Entity-Relationship Diagram (ERD)
 
 
-![ERD Image](![image](https://github.com/BigeyEeE/Amazon_Analysis/assets/149139652/7bc035cc-a9f3-46ee-9ac1-0f3a14d70c98)
+![ERD Image](https://github.com/BigeyEeE/Amazon_Analysis/blob/main/ERD.jpg?raw=true)
 )
 
 
