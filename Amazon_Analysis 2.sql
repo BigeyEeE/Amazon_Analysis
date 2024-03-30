@@ -79,7 +79,7 @@ select * from orders
 SELECT
     c.customer_id,
     c.customer_name,
-    SUM(o.sale - (o.price_per_unit * o.quantity)) AS total_profit -- profit finding
+    SUM(o.sale - p.cogs) AS total_profit -- profit finding
 FROM 
     orders AS o
 JOIN 
@@ -158,7 +158,7 @@ LIMIT 5;
 
 -- Q5-Identify the highest profitable sub-category.
 select category,
-        SUM(sale - (price_per_unit * quantity)) AS total_profit 
+        SUM(o.sale - p.cogs) AS total_profit 
        from orders
 group by 1
 order by 2 desc;
@@ -189,12 +189,13 @@ LIMIT 3;
 
 
 SELECT 
-    sale,
-    SUM((sale - (price_per_unit * quantity)) / sale) AS profit_margin
+    sale,order_Id,
+    SUM(o.sale - p.cogs / sale) AS profit_margin
 FROM 
-    orders
+    orders AS o
+	JOIN products p on o.product_id=p.product_id
 GROUP BY 
-    sale
+    sale,order_id
 ORDER BY 
     2 DESC;
 
@@ -216,8 +217,8 @@ GROUP BY
 WITH return_summary AS (
     SELECT 
         o.category,
-        CAST(SUM(r.return_id) AS numeric) AS total_returns,
-        CAST(SUM(r.return_id) * 100.0 / (SELECT SUM(return_id) FROM returns) AS numeric(10,2)) AS return_percentage
+        count(r.return_id)  AS total_returns,
+        CAST(COUNT(r.return_id) * 100.0 / (SELECT SUM(return_id) FROM returns) AS numeric(10,2)) AS return_percentage
     FROM 
         orders o
     JOIN 
